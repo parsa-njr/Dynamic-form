@@ -7,15 +7,15 @@ import { Input } from "@/components/ui/input";
 import { Label } from "@/components/ui/label";
 import React, { useEffect, useState } from "react";
 
-interface Option {
-  display: string;
-  value: string;
-  priceFactor: number;
-  isDefault: boolean;
-  isDisabled: boolean;
-  dependentFieldOptions?: Record<string, any>;
-  dependentFields?: Field[];
-}
+// interface Option {
+//   display: string;
+//   value: string;
+//   priceFactor: number;
+//   isDefault: boolean;
+//   isDisabled: boolean;
+//   dependentFieldOptions?: Record<string, any>;
+//   dependentFields?: Field[];
+// }
 
 interface ValidationRule {
   type: number;
@@ -42,7 +42,7 @@ interface Field {
     placeholder: string | null;
     suffix: string | null;
   };
-  options: Option[];
+  // options: Option[];
   validationRules: ValidationRule[];
   dependentFields?: Field[];
 }
@@ -1526,14 +1526,11 @@ const FormLayout = () => {
         [fieldId]: value,
       };
 
-      const field = formData.sections
-        .flatMap((section) => section.fields)
-        .find((f) => f.fieldId === fieldId);
+      const field = formData?.sections?.flatMap((section) => section?.fields)?.find((f) => f?.fieldId === fieldId);
 
       const selectedOption = field?.options.find(
         (option) => option.value === value
       );
-
       if (selectedOption?.dependentFields) {
         selectedOption.dependentFields.forEach((dependentField) => {
           updatedValues[dependentField.fieldId] =
