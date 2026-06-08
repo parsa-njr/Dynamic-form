@@ -1,36 +1,141 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# 🚀 Dynamic Form Builder (Next.js 15)
 
-## Getting Started
+A modern and scalable dynamic form builder application built with **Next.js 15**, **React 19**, and **TypeScript**.
 
-First, run the development server:
+This project is designed to create flexible and reusable forms with clean UI components and modern frontend architecture.
+
+---
+
+## ⚙️ Tech Stack
+
+### Core
+
+* Next.js 15
+* React 19
+* TypeScript
+
+### UI & Styling
+
+* Tailwind CSS
+* Radix UI
+* Lucide React Icons
+* tailwindcss-animate
+
+### Utilities
+
+* clsx
+* class-variance-authority
+* tailwind-merge
+
+### UI Components
+
+* Checkbox
+* Select
+* Tabs
+* Separator
+* Slot
+* Label
+
+### Carousel
+
+* Embla Carousel
+
+---
+
+## 📁 Project Structure
+
+```bash
+src/
+│
+├── app/              # Next.js App Router
+├── components/       # Reusable UI components
+├── dynamic-form/     # Dynamic form engine
+├── hooks/            # Custom hooks
+├── lib/              # Utilities and helpers
+├── types/            # Global TypeScript types
+├── styles/           # Global styles
+└── constants/        # Static constants/configs
+```
+
+---
+
+## 🚀 Getting Started
+
+### Install dependencies
+
+```bash
+npm install
+```
+
+### Run development server
 
 ```bash
 npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+### Build for production
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+```bash
+npm run build
+```
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+### Start production server
 
-## Learn More
+```bash
+npm run start
+```
 
-To learn more about Next.js, take a look at the following resources:
+---
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+## 🧹 Linting
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+```bash
+npm run lint
+```
 
-## Deploy on Vercel
+---
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+## ✨ Features
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+* ⚡ Built with Next.js App Router
+* 🧩 Dynamic and reusable form system
+* 🎨 Fully responsive UI
+* 🧠 Type-safe architecture using TypeScript
+* 🪄 Clean component abstraction
+* 📦 Reusable form controls
+* 🎯 Scalable folder structure
+* 🌙 Modern UI powered by Radix UI + Tailwind CSS
+
+---
+
+## 🧠 Architecture Notes
+
+* Component-driven architecture
+* Reusable and configurable form fields
+* Centralized utility functions
+* Separation of UI and form logic
+* Type-safe development workflow
+
+---
+
+## 🚀 Future Improvements
+
+* Add form validation system (Zod / React Hook Form)
+* Add drag & drop form builder
+* Add schema-based form generation
+* Add internationalization (i18n)
+* Add API integration layer
+* Add Storybook for component documentation
+* Add unit and integration tests
+
+---
+
+## 👨‍💻 Author
+
+**Parsa**
+
+---
+
+## 📄 License
+
+This project is private and not licensed for redistribution.
